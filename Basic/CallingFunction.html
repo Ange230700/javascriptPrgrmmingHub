@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1>Calling a function</h1>
+
+    <p id="myPar">I am a paragraph.</p>
+    <div id="myDiv">I am a div.</div>
+
+    <p>
+        <button type="button" onclick="myFunction()">Change</button>
+    </p>
+
+    <script>
+        function myFunction() {
+            document.getElementById("myPar").innerHTML = "Hello";
+            document.getElementById("myDiv").innerHTML = "How are you?";
+        }
+    </script>
+
+    <p>When you click on "Change", the two elements will change.</p>
+
+</body>
+
+</html>
