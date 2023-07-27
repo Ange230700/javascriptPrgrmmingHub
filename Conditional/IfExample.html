@@ -1,37 +1,25 @@
 <!DOCTYPE html>
 <html>
-
-<body>
-
+  <body>
     <p>
-        Click the button to get a "Have a nice day" greeting if the time is
-        less than 21:00.
-        <br />
-        If the time is greater than 21:00 the greeting
-        will not be displayed.
+      Click the button to get a "Have a nice day" greeting if the time is less
+      than 21:00.
+      <br />
+      If the time is greater than 21:00 the greeting will not be displayed.
     </p>
-
     <button onclick="myFunction()">Click me</button>
-
     <p id="demo"></p>
-
     <script>
-        function myFunction() {
+      function myFunction() {
+        var x = "";
+        var time = new Date().getHours();
 
-            var x = "";
-
-            var time = new Date().getHours();
-
-            if (time < 21) {
-
-                x = "Have a nice day";
-
-            }
-
-            document.getElementById("demo").innerHTML = x;
+        if (time < 21) {
+          x = "Have a nice day";
         }
+
+        document.getElementById("demo").innerHTML = x;
+      }
     </script>
-
-</body>
-
+  </body>
 </html>
