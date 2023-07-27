@@ -4,7 +4,6 @@ var person = {
     lastName: "Edison",
     fullName: function () {
         console.log(this.firstName + " " + this.lastName);
-        console.log(person.firstName + " " + person.lastName);
     }
 }
-person.fullName();
+person.fullName(); // Harry Edison
