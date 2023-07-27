@@ -1,22 +1,16 @@
 <!DOCTYPE html>
 <html>
-
-<body>
-
+  <body>
     <p id="demo"></p>
 
     <script>
-        var x = "";
+      var x = "";
 
-        for (var i = 0; i < 5; i++) {
+      for (var i = 0; i < 5; i++) {
+        x = x + "number = " + i + "<br>";
+      }
 
-            x = x + "number = " + i + "<br>";
-
-        }
-
-        document.getElementById("demo").innerHTML = x;
+      document.getElementById("demo").innerHTML = x;
     </script>
-
-</body>
-
+  </body>
 </html>

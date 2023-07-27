@@ -1,26 +1,25 @@
 <!DOCTYPE html>
 <html>
-
-<body>
-
+  <body>
     <p id="demo"></p>
 
     <script>
-        var txt = "";
-        var person = {
-            fname: "John",
-            lname: "Doe",
-            age: 20
-        };
+      var txt = "";
+      var person = {
+        fname: "John",
+        lname: "Doe",
+        age: 20,
+      };
 
-        for (var x in person) {
-
-            txt = txt + " " + person[x];
-
+      for (var x in person) {
+        if (x == "age") {
+          txt = txt + ". I am " + person[x] + " years old.";
+          break;
         }
+        txt = txt + " " + person[x];
+      }
 
-        document.getElementById("demo").innerHTML = txt;
+      document.getElementById("demo").innerHTML = txt;
     </script>
-</body>
-
+  </body>
 </html>

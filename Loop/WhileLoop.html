@@ -1,23 +1,18 @@
 <!DOCTYPE html>
 <html>
-
-<body>
-
+  <body>
     <p id="demo"></p>
 
     <script>
-        var x = "", i = 0;
+      var x = "",
+        i = 0;
 
-        while (i < 5) {
+      while (i < 5) {
+        x = x + "number = " + i + "<br>";
+        i++;
+      }
 
-            x = x + "number = " + i + "<br>";
-            i++;
-
-        }
-
-        document.getElementById("demo").innerHTML = x;
+      document.getElementById("demo").innerHTML = x;
     </script>
-
-</body>
-
+  </body>
 </html>
