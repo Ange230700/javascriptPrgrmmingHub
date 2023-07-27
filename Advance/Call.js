@@ -1,5 +1,6 @@
-//Calls (executes) a function and sets its this to the provided value, arguments can be passed as they are.
-
+/* 
+Calls (executes) a function and sets its this to the provided value, arguments can be passed as they are.
+*/
 var firstName =
 {
     name: "Thomas",
