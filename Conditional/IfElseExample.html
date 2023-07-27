@@ -1,38 +1,26 @@
 <!DOCTYPE html>
 <html>
-
-<body>
-
+  <body>
     <p>
-        If time is less than 16 it will show "Have a nice day".
-        <br />
-        else it will show "Good night".
+      If time is less than 16 it will show "Have a nice day".
+      <br />
+      else it will show "Good night".
     </p>
-
     <button onclick="myFunction()">Click me</button>
-
     <p id="demo"></p>
-
     <script>
-        function myFunction() {
+      function myFunction() {
+        var x = "";
+        var time = new Date().getHours();
 
-            var x = "";
-            var time = new Date().getHours();
-
-            if (time < 16) {
-
-                x = "Have a nice day";
-
-            } else {
-
-                x = "Good night";
-
-            }
-
-            document.getElementById("demo").innerHTML = x;
+        if (time < 16) {
+          x = "Have a nice day";
+        } else {
+          x = "Good night";
         }
+
+        document.getElementById("demo").innerHTML = x;
+      }
     </script>
-
-</body>
-
+  </body>
 </html>
