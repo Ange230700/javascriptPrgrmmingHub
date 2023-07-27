@@ -1,34 +1,28 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <script>
-        onerror = handleErr;
-        var txt = "";
+      onerror = handleErr;
+      var txt = "";
 
-        function handleErr(msg, url, l) {
+      function handleErr(msg, url, l) {
+        txt = "There was an error on this page.\n\n";
+        txt += "Error: " + msg + "\n";
+        txt += "URL: " + url + "\n";
+        txt += "Line: " + l + "\n\n";
+        txt += "Click OK to continue.\n\n";
+        alert(txt);
 
-            txt = "There was an error on this page.\n\n";
-            txt += "Error: " + msg + "\n";
-            txt += "URL: " + url + "\n";
-            txt += "Line: " + l + "\n\n";
-            txt += "Click OK to continue.\n\n";
-            alert(txt);
+        return true;
+      }
 
-            return true;
-
-        }
-
-        function message() {
-
-            alertMe("Welcome guest!");
-
-        }
+      function message() {
+        alertMe("Welcome guest!");
+      }
     </script>
-</head>
+  </head>
 
-<body>
+  <body>
     <input type="button" value="View message" onclick="message()" />
-</body>
-
+  </body>
 </html>

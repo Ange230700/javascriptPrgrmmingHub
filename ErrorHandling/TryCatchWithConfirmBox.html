@@ -1,32 +1,26 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <script>
-        var txt = "";
+      var txt = "";
 
-        function message() {
+      function message() {
+        try {
+          adddlert("Welcome guest!");
+        } catch (err) {
+          txt = "There was an error on this page.\n\n";
+          txt += "Click OK to continue viewing this page,\n";
+          txt += "or Cancel to return to the home page.\n\n";
 
-            try {
-
-                adddlert("Welcome guest!");
-
-            } catch (err) {
-
-                txt = "There was an error on this page.\n\n";
-                txt += "Click OK to continue viewing this page,\n";
-                txt += "or Cancel to return to the home page.\n\n";
-
-                if (!confirm(txt)) {
-                    //action on confirm
-                }
-            }
+          if (!confirm(txt)) {
+            //action on confirm
+          }
         }
+      }
     </script>
-</head>
+  </head>
 
-<body>
+  <body>
     <input type="button" value="View message" onclick="message()" />
-</body>
-
+  </body>
 </html>
