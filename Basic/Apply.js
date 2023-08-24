@@ -12,7 +12,7 @@ var person =
 };
 
 //when we invoke showFullName() on the person object, the context becomes person object.
-person.showFullName(); //Harry Edison
+person.showFullName(); // * Expected output: Harry Edison
 
 //another object
 var anotherPerson =
@@ -22,5 +22,5 @@ var anotherPerson =
 };
 
 //By using apply() method, "this" gets the value of whichever object invokes the "this" function
-person.showFullName.apply(anotherPerson);//Mary Thomas
+person.showFullName.apply(anotherPerson);// * Expected output: Mary Thomas
 //So the context is now anotherPerson
