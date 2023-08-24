@@ -1,12 +1,7 @@
-/*  If we assign a method that uses “this” to a variable, then “this” will have value of the global data array, 
-and not the data array of the user object.
-solution is bind() method.
-Example showing binding some parameters*/
-
-var sum = function (firstInteger, secondInteger) {
+var functionThatAddsTwoIntegers = function (firstInteger, secondInteger) {
     return firstInteger + secondInteger;
 };
 
-var add5 = sum.bind(null, 5);
+var functionThatAddsFiveToAnInteger = functionThatAddsTwoIntegers.bind(null, 5);
 
-console.log(add5(10));
+console.log(functionThatAddsFiveToAnInteger(10));
