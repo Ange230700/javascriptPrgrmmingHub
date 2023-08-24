@@ -6,4 +6,6 @@ var person = {
     age: 50
 };
 
-console.log(`My name is ${person.firstName} ${person.lastName}. I am ${person.age} years old.`);
+console.log(`
+My name is ${person.firstName} ${person.lastName}. I am ${person.age} years old.
+`);
