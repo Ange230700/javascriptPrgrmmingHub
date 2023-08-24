@@ -15,6 +15,7 @@ var lastName =
 }
 
 firstName.sayHello.call(lastName, "Thomas");
+// * Expected Output: Thomas Edison
 
 // call ([thisObj, [arg1[, arg2[,  [, argN]]]]])
 

@@ -2,7 +2,7 @@
 
 var Name = "Michel";
 
-getName();
+getName(); // * Expected output: My name is Michel
 
 //Here, getName using 'Name' variable is declared in global scope.
 function getName() {

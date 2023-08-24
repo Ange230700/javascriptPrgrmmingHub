@@ -9,3 +9,4 @@ var person = {
 console.log(`
 My name is ${person.firstName} ${person.lastName}. I am ${person.age} years old.
 `);
+// * Expected output: My name is Bob Marley. I am 50 years old.

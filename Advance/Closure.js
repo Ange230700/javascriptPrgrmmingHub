@@ -15,4 +15,4 @@ function showName(firstName, lastName) {
     return makeFullName();
 }
 
-console.log(showName("Michael", "Jackson")); // Your name is :michael Jackson
+console.log(showName("Michael", "Jackson")); // * Expected output --> Your name is : Michael Jackson

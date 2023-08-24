@@ -6,4 +6,4 @@ function writeName() {
     console.log("I am " + Name);
 }
 
-writeName();
+writeName(); // * Expected Output: I am Michel
